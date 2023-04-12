@@ -122,7 +122,7 @@ const Contact = () => {
             {loading ? "Enviando..." : "Enviar"}
           </button>
         </form>
-        <div class="flex items-center text-[20px]  mt-5">
+        <div className="flex items-center text-[20px]  mt-5">
           {/* <svg
             class="h-6 w-6 flex-none fill-sky-100 stroke-sky-500 stroke-2"
             stroke-linecap="round"
@@ -131,9 +131,9 @@ const Contact = () => {
             <circle cx="12" cy="12" r="11" />
             <path d="m8 13 2.165 2.165a1 1 0 0 0 1.521-.126L16 9" fill="none" />
           </svg> */}
-          <p class="mr-1">Síguenos!</p>
+          <p className="mr-1">Síguenos!</p>
           <a href="https://www.instagram.com/bytepulse/" target="_blank">
-            <i class="text-[50px] bx bxl-instagram"></i>
+            <i className="text-[50px] bx bxl-instagram"></i>
           </a>
         </div>
       </motion.div>
