@@ -1,10 +1,13 @@
 import { motion } from "framer-motion";
 import { styles } from "../styles";
 import { ComputersCanvas } from "./canvas";
+import { slideIn } from "../utils/motion";
 
 function Hero() {
   return (
     <section className="relative w-full h-screen mx-auto">
+      {/* {`xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden`} */}
+      {/* absolute inset-0 top-[120px] max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5 */}
       <div
         className={`absolute inset-0 top-[120px] max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}
       >
@@ -15,17 +18,16 @@ function Hero() {
 
         <div>
           <h1 className={`${styles.heroHeadText} text-white`}>
-            Desarrollo de software a <span className="text-[#0072c6]">medida.</span>
+            Desarrollo de software a{" "}
+            <span className="text-[#0072c6]">medida.</span>
           </h1>
-          <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            
-          </p>
+          <p className={`${styles.heroSubText} mt-2 text-white-100`}></p>
         </div>
       </div>
 
       <ComputersCanvas />
 
-      <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center">
+      <div className="absolute xs:bottom-10 bottom-5 w-full flex justify-center items-center">
         <a href="#acerca">
           <div className="w-[35px] h-[55px] rounded-xl border-4 border-gray-100 flex justify-center items-start p-2">
             <motion.div
