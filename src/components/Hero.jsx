@@ -6,20 +6,17 @@ import { slideIn } from "../utils/motion";
 function Hero() {
   return (
     <section className="relative w-full h-screen mx-auto">
-      {/* {`xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden`} */}
-      {/* absolute inset-0 top-[120px] max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5 */}
       <div
         className={`absolute inset-0 top-[120px] max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}
       >
         <div className="flex flex-col justify-center items-center mt-5">
           <div className="w-5 h-5 rounded-sm bg-[#0072c6]" />
-          <div className="w-1 sm:h-80 h-40 violet-gradient" />
+          <div className="w-2 sm:h-80 h-40 violet-gradient" />
         </div>
 
         <div>
           <h1 className={`${styles.heroHeadText} text-white`}>
-            Desarrollo de software a{" "}
-            <span className="text-[#0072c6]">medida.</span>
+            Desarrollo de software a <p className="text-[#0072c6]">medida.</p>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}></p>
         </div>
